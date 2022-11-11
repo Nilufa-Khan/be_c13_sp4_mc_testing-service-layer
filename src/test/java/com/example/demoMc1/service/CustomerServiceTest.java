@@ -26,6 +26,7 @@ import static org.mockito.internal.verification.VerificationModeFactory.times;
 @ExtendWith(MockitoExtension.class)
 public class CustomerServiceTest {
     @Mock
+
     private MusicRepository musicRepository;
 
     @InjectMocks
