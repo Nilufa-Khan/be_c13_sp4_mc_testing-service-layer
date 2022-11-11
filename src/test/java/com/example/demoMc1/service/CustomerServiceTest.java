@@ -35,6 +35,7 @@ public class CustomerServiceTest {
     private Music music1,music2;
     List<Music> musicList;
     Artist artist1, artist2;
+
     @BeforeEach
     void setUp() {
         artist1 = new Artist(20,"RKK");
