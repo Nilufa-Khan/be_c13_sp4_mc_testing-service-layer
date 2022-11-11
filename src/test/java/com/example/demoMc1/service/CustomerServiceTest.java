@@ -70,6 +70,7 @@ public class CustomerServiceTest {
 
     @Test
     public void givenMusicToDeleteShouldDeleteSuccess() throws MusicNotFound {
+
         when(musicRepository.findById(music1.getTrackId())).thenReturn(Optional.ofNullable(music1));
         boolean flag = musicService.deleteMusic(music1.getTrackId());
         assertEquals(true,flag);
