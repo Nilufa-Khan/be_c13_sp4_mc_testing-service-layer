@@ -38,6 +38,7 @@ public class CustomerServiceTest {
 
     @BeforeEach
     void setUp() {
+
         artist1 = new Artist(20,"RKK");
          music1 = new Music(29,"mana ki",4,artist1);
         artist2 = new Artist(25,"arijit");
