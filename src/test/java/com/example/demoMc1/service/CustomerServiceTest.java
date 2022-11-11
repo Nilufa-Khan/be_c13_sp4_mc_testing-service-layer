@@ -61,6 +61,7 @@ public class CustomerServiceTest {
 
     @Test
     public void givenMusicToSaveReturnMusicFailure(){
+
         when(musicRepository.findById(music1.getTrackId())).thenReturn(Optional.ofNullable(music1));
         assertThrows(MusicAlreadyExistException.class,()->musicService.saveMusic(music1));
         verify(musicRepository,times(0)).save(any());
