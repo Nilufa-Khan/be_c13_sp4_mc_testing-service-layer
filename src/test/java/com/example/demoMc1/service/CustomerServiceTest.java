@@ -48,6 +48,7 @@ public class CustomerServiceTest {
 
     @Test
     public void givenMusicToSaveReturnSavedMusicSuccess() throws MusicAlreadyExistException {
+
         when(musicRepository.save(any())).thenReturn(music1);
         when(musicRepository.findById(music1.getTrackId())).thenReturn(Optional.ofNullable(null));
 
